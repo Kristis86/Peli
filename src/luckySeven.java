@@ -5,10 +5,11 @@ import java.util.Scanner;
 
 public class luckySeven {
     public static void main(String[] args) throws Exception {
-        //Scanner in = new scanner(System.in);
+        Scanner in = new Scanner(System.in);
         Random random = new Random ();
 
         int raha = 5;
+        String input = "";
     
         raha--;
 
@@ -25,8 +26,23 @@ public class luckySeven {
             System.out.println("Onnea voitit!");
             raha++;
             System.out.println("Rahaa jäljellä " + raha + " euroa");
+            if (raha > 0){
+
+                System.out.println("Haluatko pelata uudellen?");
+                input = in.nextLine();
+
+            }
 
         } else System.out.println("Voi harmi, Hävisit!");
+
+        if (raha > 0){
+
+            System.out.println("Haluatko pelata uudellen?");
+            input = in.nextLine();
+
+        } else System.out.println("Peli loppui!");
+
+
         
 
 
