@@ -9,6 +9,7 @@ public class luckySeven {
         Random random = new Random ();
 
         int raha = 5;
+
         String input = "";
     
         raha--;
@@ -24,7 +25,8 @@ public class luckySeven {
         if (randomNumber1 == 7 | randomNumber2 == 7 | randomNumber3 == 7 && raha >= 0){
 
             System.out.println("Onnea voitit!");
-            raha++;
+            raha = raha + 3;
+            
             System.out.println("Rahaa jäljellä " + raha + " euroa");
             if (raha > 0){
 
@@ -33,7 +35,9 @@ public class luckySeven {
 
             }
 
-        } else System.out.println("Voi harmi, Hävisit!");
+        } if else () {
+            
+            System.out.println("Voi harmi, Hävisit!");
 
         if (raha > 0){
 
@@ -41,6 +45,9 @@ public class luckySeven {
             input = in.nextLine();
 
         } else System.out.println("Peli loppui!");
+
+
+        //Kesken vielä//
 
 
         
