@@ -11,6 +11,8 @@ public class luckySeven {
         int raha = 5;
 
         String input = "";
+
+        System.out.println("Tervetuloa pelaamaan peliä");
     
         raha--;
 
